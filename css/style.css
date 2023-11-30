@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
 
 body{
-  max-width: 320px;
+  max-width: 425px;
   height: auto;
   font-family: 'Roboto', sans-serif ;
+  background-color: #F8F8F8;
   margin: 0;
   padding: 0;
 }
@@ -171,10 +172,11 @@ background-color: #ffffff;
   display: block;
 }
 
-@media screen and (min-width:321px)and (max-width: 769px) {
+@media screen and (min-width:426px)and (max-width: 768px) {
   body{
-  max-width: 768px;
-  min-width: 321px;
+  max-width: 100%;
+  min-width: 426px;
+  ;
   height: auto;
   font-family: 'Roboto', sans-serif ;
   margin: 0;
@@ -237,13 +239,12 @@ background-color: #ffffff;
 }
 }
 
-@media screen and (min-width:770px) and (max-width: 1120px) {
+@media screen and (min-width:769px) {
   body{
-    max-width: 1120px;
+    max-width: 100%;
     min-width: 768px;
     height: auto;
     font-family: 'Roboto', sans-serif ;
-    margin: 0;
     padding: 0;
   }
 
