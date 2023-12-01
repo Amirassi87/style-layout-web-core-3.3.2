@@ -7,15 +7,15 @@
     <title>CPS</title>
   </head>
   <body>
-    <header class="header header--b-border header--d-block">
+    <header class="header header--b-border">
       <nav class="upper-menu upper-menu--flex upper-menu--bg-white">
-        <a class="upper-menu__icon">
+        <a class="upper-menu__icon upper-menu__icon--block">
           <img class="upper-menu__img" src="img/icon/bar.png" alt="bar" />
         </a>
         <div
-          class="upper-menu__vertical-line upper-menu__vertical-line--hidden upper-menu__vertical-line--margin"
+          class="upper-menu__vertical-line"
         ></div>
-        <a class="upper-menu__icon upper-menu__icon--flex-grow-5">
+        <a class="upper-menu__icon upper-menu__icon--block upper-menu__icon--flex-grow-5">
           <svg
             class="upper-menu__img"
             width="98"
@@ -74,24 +74,24 @@
             />
           </svg>
         </a>
-        <div class="upper-menu__hidden-icons">
-          <a class="upper-menu__icon">
+        
+          <a class="upper-menu__icon upper-menu__icon--block">
             <img class="upper-menu__img" src="img/icon/call.png" alt="bar" />
           </a>
-          <a class="upper-menu__icon">
+          <a class="upper-menu__icon upper-menu__icon--block">
             <img class="upper-menu__img" src="img/icon/chat.png" alt="bar" />
           </a>
-          <a class="upper-menu__icon">
+          <a class="upper-menu__icon upper-menu__icon--block">
             <img class="upper-menu__img" src="img/icon/profile.png" alt="bar" />
           </a>
-        </div>
+        
         <div
-          class="upper-menu__vertical-line upper-menu__vertical-line--block upper-menu__vertical-line--margin"
+          class="upper-menu__vertical-line"
         ></div>
-        <a class="upper-menu__icon">
+        <a class="upper-menu__icon upper-menu__icon--block">
           <img class="upper-menu__img" src="img/icon/repair.png" alt="bar" />
         </a>
-        <a class="upper-menu__icon">
+        <a class="upper-menu__icon upper-menu__icon--block">
           <img
             class="upper-menu__img"
             src="img/icon/check-status.png"
@@ -100,18 +100,18 @@
         </a>
       </nav>
     </header>
-    <main class="main main--bg-grey">
+    <main class="main">
       <div class="services">
         <div class="services__title services__title--flex">
           <div class="services__vertical-line"></div>
-          <h1 class="services_head services_head--block">Services</h1>
-          <div class="services-icons services-icons--hidden services-icons--flex">
+          <h1 class="services_head">Services</h1>
+          <div class="services-icons services-icons--flex">
             <p>Submit a Request</p>
-            <a class="services-icons__icon">
+            <a class="services-icons__icon services-icons__icon--block">
               <img class="services-icons__img" src="img/icon/repair.png" alt="bar" />
             </a>
             <p>Repair Status</p>
-            <a class="services-icons__icon">
+            <a class="services-icons__icon services-icons__icon--block">
               <img
                 class="services-icons__img"
                 src="img/icon/check-status.png"
@@ -120,27 +120,27 @@
             </a>
           </div>
         </div>
-        <div class="slide-menu">
-          <button class="btn btn--active btn--white">Repairable Devices</button>
-          <button class="btn btn-regular">Brand We repair</button>
-          <button class="btn btn-regular">Services Prices</button>
-          <button class="btn btn-regular">Service Center Locations</button>
-          <button class="btn btn-regular">Special Prices</button>
+        <div class="slide-menu slide-menu--flex">
+          <button class="btn btn--block btn--active btn--white">Repairable Devices</button>
+          <button class="btn btn--block btn-regular">Brand We repair</button>
+          <button class="btn btn--block btn-regular">Services Prices</button>
+          <button class="btn btn--block btn-regular">Service Center Locations</button>
+          <button class="btn btn--block btn-regular">Special Prices</button>
+          <button class="btn btn--block btn-regular">Reviews</button>
         </div>
       </div>
       <div class="about-us about-us--flex">
         <div class="intro">
-          <p class="intro__content intro__content--regular">
+          <p class="intro__first-part">
             We are an authorized service center for Dell equipment repair. Only
             with us can you repair your Dell laptop with the official
             manufacturer's warranty.
           </p>
-          <p class="intro__hidden-content intro__hidden-content--hidden">
+          <p class="intro__second-part">
             We have been operating successfully since 1992 and have earned a
             reputation as a reliable partner.<span
-              class="intro__hidden-para intro__hidden-para--hidden"
-            >
-              We take pride in the fact that people come to us based on
+              class="intro__third-part"
+            > We take pride in the fact that people come to us based on
               recommendations and, in turn, recommend us to their family and
               friends.
             </span>
@@ -148,12 +148,13 @@
           <div class="intro__read-more intro__read-more--flex">
             <a href="#"
               ><img
-                class="intro__img"
+                class="intro__img intro__img--block"
                 src="img/icon/read-more.png"
                 alt="read more"
               />
             </a>
-            <a href="#" class="intro__link--decoration-none intro__link--black"
+            <a href="#" class="intro__link
+            intro__link--block intro__link--decoration-none intro__link--black"
               >Read more</a
             >
           </div>

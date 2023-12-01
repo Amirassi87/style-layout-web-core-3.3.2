@@ -7,6 +7,7 @@ body{
   background-color: #F8F8F8;
   margin: 0;
   padding: 0;
+  overflow-y: auto;
 }
 
 /* upper menu */
@@ -15,9 +16,13 @@ body{
   border-bottom: 1px solid #D9FFF5;
 }
 
+.upper-menu__icon--block {
+  display: block;
+}
+
 .upper-menu--flex {
-  width: 100%;
   display: flex;
+  width: 100%;
   justify-content: space-around;
   align-items: center;
   height: 88px;
@@ -27,12 +32,11 @@ body{
 background-color: #ffffff;
 }
 
-.upper-menu__icon {
-  display: block;
-}
-
-.upper-menu__hidden-icons {
-  display: none;
+.upper-menu__icon:nth-child(4),
+.upper-menu__icon:nth-child(5),
+.upper-menu__icon:nth-child(6) {
+  position: fixed;
+  left: -1000px;
 }
 
 .upper-menu__vertical-line {
@@ -40,18 +44,22 @@ background-color: #ffffff;
   height: 32px;
 }
 
-.upper-menu__vertical-line--hidden {
-    display: none;
+.upper-menu__vertical-line:nth-child(2) {
+  border-right: 2px solid #eaeaea;
+  height: 32px;
+  position: fixed;
+  left: -1000px;
 }
 
-/* main */
-
-.main--bg-grey {
-  background-color: #F8F8F8;
-}
+/*======== main =========*/
+/* Services */
 
 .services {
   padding-top: 2em;
+}
+
+.services__title--flex {
+  display: flex;
 }
 
 .services__vertical-line {
@@ -62,54 +70,59 @@ background-color: #ffffff;
   border-radius: 50px;
 }
 
+.services-icons {
+  position: fixed;
+  left: -1000px;
+}
+
 .services_head{
   margin: 0;
 }
 
-.services_head--block {
+.services-icons__icon--block {
   display: block;
 }
 
-.services__title--flex {
-  display: flex;
-}
-
-.services-icons--hidden {
-  display: none;
-}
 /* Menu Slide*/
 
-.slide-menu {
+.btn--block {
+  display: block;
+}
+
+.slide-menu--flex {
+  display: flex;
   overflow-x: auto;
-  white-space: nowrap;
+  column-gap: 2em;
   padding-bottom: 2em;
+  margin-top: 2em;
+  margin-left: 1em;
 }
 
 .btn {
-  width: 246px;
+  width: auto;
   height: 40px;
   font-size: 1rem;
   color: #7E7E82;
   text-align: left;
-  margin-top: 2em;
-  margin-left: 0.8em;
 }
 
 .btn-regular {
   border: none;
   background-color: transparent;
+  white-space: nowrap;
+  padding-left: 1em;
 }
 
 .btn--active {
-  width: 246px;
+  white-space: nowrap;
   height: 40px;
   border: 3px solid #B8FFEC;
   border-radius: 6px;
   font-size: 1rem;
+  font-weight: 400;
   color: #7E7E82;
-  text-align: left;
-  margin-top: 2em;
-  margin-left: 0.8em;
+  padding-right: 6em;
+  padding-left: 1em;
 }
 
 .btn--white {
@@ -118,32 +131,36 @@ background-color: #ffffff;
 
 /* About us*/
 
-.intro__content {
-  margin-left: 0.8em;
-  padding-right: 0.119rem;
+.about-us--flex {
+  display: flex;
+  flex-direction: column;
 }
 
-.intro__content--regular {
+.intro__first-part {
+  margin-left: 0.8em;
+  padding-right: 0.119rem;
   font-size: 0.95rem;
   font-weight: normal;
 }
 
-.intro__hidden-content {
+.intro__second-part {
   margin-left: 0.8em;
-  padding-right: 4em;
+  font-size: 0.95rem;
+  font-weight: normal;
+  position: fixed;
+  left:-1000px;
 }
 
-.intro__hidden-content--hidden {
-  display: none;
+.intro__third-part {
+  font-size: 0.95rem;
+  font-weight: normal;
+  position: fixed;
+  left:-1000px;
 }
 
-.intro__hidden-para--hidden {
-  display: none;
-}
-
-.about-us--flex {
-  display: flex;
-  flex-direction: column;
+.intro__img--block,
+.intro__link--block{
+  display: block;
 }
 
 .intro__read-more--flex {
@@ -152,20 +169,24 @@ background-color: #ffffff;
   align-items: center;
 }
 
+.intro__link {
+  font-size: 16px;
+  font-weight:bold;
+  vertical-align: middle;
+}
+
 .intro__link--decoration-none {
   text-decoration: none;
 }
 
 .intro__link--black {
   color:black;
-  font-size: 16px;
-  font-weight:bold;
-  vertical-align: middle;
 }
 
 .about-us__company-img {
   width: 100%;
   height: auto;
+  padding-left: 1em;
 }
 
 .about-us__company-img--block {
@@ -176,7 +197,6 @@ background-color: #ffffff;
   body{
   max-width: 100%;
   min-width: 426px;
-  ;
   height: auto;
   font-family: 'Roboto', sans-serif ;
   margin: 0;
@@ -185,6 +205,7 @@ background-color: #ffffff;
 
 .upper-menu--flex {
   display: flex;
+  justify-content: space-around;
   align-items: center;
   height: 88px;
 }
@@ -197,21 +218,28 @@ background-color: #ffffff;
   padding: 0.6em;
 }
 
-.upper-menu__vertical-line--hidden {
-  display: block;
+.upper-menu__icon:nth-child(4),
+.upper-menu__icon:nth-child(5),
+.upper-menu__icon:nth-child(6) {
+  position: static;
 }
 
-.upper-menu__vertical-line--margin {
+.upper-menu__vertical-line {
+  border-right: 2px solid #eaeaea;
+  height: 32px;
   margin-right: 0.5em;
   margin-left: 0.5em;
 }
 
-.upper-menu__hidden-icons {
-  display: flex;
+.upper-menu__vertical-line:nth-child(2) {
+  border-right: 2px solid #eaeaea;
+  height: 32px;
+  position: static;
 }
 
-.services-icons--hidden {
-  display: none;
+.services-icons {
+  position: fixed;
+  left: -1000px;
 }
 
 .about-us--flex {
@@ -221,15 +249,18 @@ background-color: #ffffff;
   padding-bottom: 1.5em;
 }
 
-.intro__content {
+.intro__first-part {
   margin-top: 0;
   margin-left: 0.8em;
-  padding-right: 3.5em;
+  padding-right: 2em;
 }
 
-.intro__hidden-content--hidden {
-  display: block;
-  padding-right: 1.5em;
+.intro__second-part {
+  margin-left: 0.8em;
+  padding-right: 1em;
+  font-size: 0.95rem;
+  font-weight: normal;
+  position: static;
 }
 
 .about-us__company-img {
@@ -248,12 +279,9 @@ background-color: #ffffff;
     padding: 0;
   }
 
-  .header--d-block {
-    display: none;
-  }
-
-  .services-icons--hidden {
-      display: block;
+  .header {
+    position: fixed;
+    left: -1000px;
   }
 
   .services-icons--flex {
@@ -267,14 +295,17 @@ background-color: #ffffff;
   }
 
   .services-icons {
+    position: static;
     margin-left: auto;
     margin-right: 1.5rem;
   }
 
-  .slide-menu {
+  .slide-menu--flex {
     display: flex;
+    align-items: center;
+    column-gap:3em;
     flex-wrap: wrap;
-    padding-bottom: 0.9rem;
+    margin-top: 2em;
   }
 
   .about-us--flex {
@@ -284,15 +315,22 @@ background-color: #ffffff;
     padding-bottom: 1.5em;
   }
 
-  .intro__content {
+  .intro__first-part {
     margin-top: 0;
     margin-left: 0.8em;
     padding-right: 1.5em;
   }
 
-  .intro__hidden-content--hidden {
-    display: block;
-    padding-right: 1.5em;
+  .intro__second-part {
+    font-size: 0.95rem;
+    font-weight: normal;
+    position: static;
+  }
+
+  .intro__third-part {
+    font-size: 0.95rem;
+    font-weight: normal;
+    position: static;
   }
 
   .about-us__company-img {
@@ -300,9 +338,4 @@ background-color: #ffffff;
     height: auto;
     padding-right: 1.5em;
   }
-
-  .intro__hidden-para--hidden {
-    display: inline;
-  }
-
 }
