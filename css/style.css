@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
 
 body{
-  max-width: 425px;
+  max-width: 480px;
   height: auto;
   font-family: 'Roboto', sans-serif ;
   background-color: #F8F8F8;
@@ -186,14 +186,13 @@ background-color: #ffffff;
 .about-us__company-img {
   width: 100%;
   height: auto;
-  padding-left: 1em;
 }
 
 .about-us__company-img--block {
   display: block;
 }
 
-@media screen and (min-width:426px)and (max-width: 768px) {
+@media screen and (min-width:481px)and (max-width: 768px) {
   body{
   max-width: 100%;
   min-width: 426px;
@@ -201,6 +200,7 @@ background-color: #ffffff;
   font-family: 'Roboto', sans-serif ;
   margin: 0;
   padding: 0;
+  overflow-y: auto;
 }
 
 .upper-menu--flex {
@@ -277,6 +277,7 @@ background-color: #ffffff;
     height: auto;
     font-family: 'Roboto', sans-serif ;
     padding: 0;
+    overflow-y: auto;
   }
 
   .header {
