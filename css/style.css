@@ -16,16 +16,19 @@ body{
   border-bottom: 1px solid #D9FFF5;
 }
 
+.upper-menu {
+  width: 100%;
+  height: 88px;
+}
+
 .upper-menu__icon--block {
   display: block;
 }
 
 .upper-menu--flex {
   display: flex;
-  width: 100%;
   justify-content: space-around;
   align-items: center;
-  height: 88px;
 }
 
 .upper-menu--bg-white {
@@ -192,22 +195,28 @@ background-color: #ffffff;
   display: block;
 }
 
-@media screen and (min-width:481px)and (max-width: 768px) {
+@media screen and (min-width:481px)and (max-width: 1024px) {
+
   body{
   max-width: 100%;
-  min-width: 426px;
+  min-width: 481px;
   height: auto;
   font-family: 'Roboto', sans-serif ;
   margin: 0;
   padding: 0;
   overflow-y: auto;
+  box-sizing: border-box; 
+}
+
+.upper-menu {
+  width: 100%;
+  height: 88px;
 }
 
 .upper-menu--flex {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 88px;
 }
 
 .upper-menu__icon--flex-grow-5 {
@@ -215,7 +224,7 @@ background-color: #ffffff;
 }
 
 .upper-menu__icon {
-  padding: 0.6em;
+  margin: 0.6em;
 }
 
 .upper-menu__icon:nth-child(4),
@@ -227,8 +236,8 @@ background-color: #ffffff;
 .upper-menu__vertical-line {
   border-right: 2px solid #eaeaea;
   height: 32px;
-  margin-right: 0.5em;
-  margin-left: 0.5em;
+  margin-right: 0.4em;
+  margin-left: 0.4em;
 }
 
 .upper-menu__vertical-line:nth-child(2) {
@@ -270,10 +279,10 @@ background-color: #ffffff;
 }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:1025px) {
   body{
     max-width: 100%;
-    min-width: 768px;
+    min-width: 1023px;
     height: auto;
     font-family: 'Roboto', sans-serif ;
     padding: 0;
