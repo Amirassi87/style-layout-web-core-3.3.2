@@ -195,7 +195,7 @@ background-color: #ffffff;
   display: block;
 }
 
-@media screen and (min-width:481px)and (max-width: 1024px) {
+@media screen and (min-width:481px) and (max-width: 1023px) {
 
   body{
   max-width: 100%;
@@ -224,7 +224,7 @@ background-color: #ffffff;
 }
 
 .upper-menu__icon {
-  margin: 0.6em;
+  margin: 0.5em;
 }
 
 .upper-menu__icon:nth-child(4),
@@ -279,7 +279,7 @@ background-color: #ffffff;
 }
 }
 
-@media screen and (min-width:1025px) {
+@media screen and (min-width:1024px) {
   body{
     max-width: 100%;
     min-width: 1023px;
